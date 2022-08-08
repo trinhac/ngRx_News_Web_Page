@@ -1,0 +1,11 @@
+<nb-card>
+    <nb-card-body>
+      <button nbButton hero status="info" (click)="navigateTo('')">
+        News
+      </button>
+      <button nbButton hero status="danger" (click)="navigateTo('/nothinghere')">
+        Add Tab Here
+      </button>
+      <router-outlet></router-outlet>
+    </nb-card-body>
+</nb-card>

@@ -1,0 +1,33 @@
+<div class="boxCalc">
+  <input
+    id="inputCalc"
+    [placeholder]="inputData != '' ? inputData : 0"
+    readonly
+  />
+  <div class="grid-container">
+    <div class="grid-item"><button (click)="onClick('7')">7</button></div>
+    <div class="grid-item"><button (click)="onClick('8')">8</button></div>
+    <div class="grid-item"><button (click)="onClick('9')">9</button></div>
+    <div class="grid-item"><button (click)="onClick('/')">/</button></div>
+
+    <div class="grid-item"><button (click)="onClick('4')">4</button></div>
+    <div class="grid-item"><button (click)="onClick('5')">5</button></div>
+    <div class="grid-item"><button (click)="onClick('6')">6</button></div>
+    <div class="grid-item"><button (click)="onClick('*')">*</button></div>
+    <div class="grid-item"><button (click)="onClick('1')">1</button></div>
+    <div class="grid-item"><button (click)="onClick('2')">2</button></div>
+    <div class="grid-item"><button (click)="onClick('3')">3</button></div>
+    <div class="grid-item"><button (click)="onClick('-')">-</button></div>
+    <div class="grid-item"><button (click)="onClick('0')">0</button></div>
+    <div class="grid-item"><button (click)="calculate()">=</button></div>
+    <div class="grid-item">
+      <button
+        style="color: white; background-color: rgb(234, 110, 82)"
+        (click)="reset()"
+      >
+        C
+      </button>
+    </div>
+    <div class="grid-item"><button (click)="onClick('+')">+</button></div>
+  </div>
+</div>

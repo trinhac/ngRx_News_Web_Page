@@ -1,0 +1,12 @@
+<nb-card *ngFor="let article of articles">
+    <nb-card-header>{{ article.title }}</nb-card-header>
+    <nb-card-body>
+      <img [src]="article.cover_image" width="60%" alt="" />
+      <div class="descript">
+        <p>{{ article.description }}</p>
+      </div>
+    </nb-card-body>
+    <nb-card-footer>By {{ article.user.name }}
+      <button nbButton status ="primary" (click)='reDir(article.canonical_url)'>Read More</button>
+    </nb-card-footer>
+  </nb-card> 
